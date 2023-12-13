@@ -1,0 +1,120 @@
+body {
+  background-color: powderblue;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Для десктопів: */
+
+@media only screen and (max-width: 768px) {
+  .col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 89%;}
+.col-12 {width: 100%;}
+}
+.menu {
+  width: 100%;
+  float: none;
+}
+.main {
+  width: 100%;
+  float: none;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1.typeh1 {
+  color: rgb(0, 217, 255);
+  font-family: verdana;
+  font-size: 300%;
+}
+
+.fit-picture {
+  max-width: 100%;
+  height: auto;
+}
+h2.typeh2
+{
+  text-align: center;
+    color: rgb(80, 59, 59);
+    font-family: verdana;
+    font-size: 200%;
+  }
+p.type1  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+p.type2  {
+  color: rgb(0, 255, 255);
+  font-family: courier;
+  font-size: 160%;
+}
+p.type3  {
+  color: rgb(255, 0, 179);
+  font-family: courier;
+  font-size: 160%;
+}
+p.type4{
+  color: rgb(255, 0, 179);
+  font-family: courier;
+  font-size: 150%;
+}
+p.type5{
+  color: rgb(4, 0, 255);
+  font-family: courier;
+  font-size: 130%;
+}
+th.type6{
+  color:rgb(126, 122, 122);
+  font-size: 200%;
+  font-family:sans-serif;
+}
+th.type7
+{
+  color:rgb(255, 251, 0);
+  font-size: 200%;
+  font-family:Times New Roman;
+}
+th.type8
+{
+  color:rgb(4, 0, 255);
+  font-size: 200%;
+  font-family: Verdana;
+}
+th.type9
+{
+  color:rgb(247, 0, 214);
+  font-size: 160%;
+  font-family: sans-serif;
+}
+th.type10
+{
+  color:rgb(43, 44, 46);
+  font-size: 160%;
+  font-family: Helvetica;
+}
+th.type11
+{
+  color:rgb(201, 26, 35);
+  font-size: 160%;
+  font-family: Arial;
+}
+.border4{
+  border: 5px solid #000; 
+  padding: 1px; 
+  font-size: 200%;
+  font-family: verdana;
+}
