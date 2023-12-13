@@ -1,7 +1,56 @@
 body {
   background-color: powderblue;
 }
+/* Общие стили для всех устройств */
+body {
+  background-color: powderblue;
+}
 
+[class*="col-"] {
+  width: 100%;
+}
+
+.menu, .main {
+  width: 100%;
+  float: none;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Стили для мобильных устройств */
+@media only screen and (max-width: 768px) {
+  body {
+    /* Дополнительные стили для мобильных устройств */
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .typeh1 {
+    font-size: 200%; /* Уменьшаем размер шрифта для заголовков */
+  }
+
+  .typeh2 {
+    font-size: 150%; /* Уменьшаем размер шрифта для заголовков второго уровня */
+  }
+
+  p {
+    font-size: 100%; /* Масштабируем размер шрифта абзацев */
+  }
+
+  th {
+    font-size: 150%; /* Масштабируем размер шрифта ячеек таблицы */
+  }
+  
+  .border4 {
+    font-size: 150%; /* Масштабируем размер шрифта элемента с классом border4 */
+  }
+}
 [class*="col-"] {
   width: 100%;
 }
