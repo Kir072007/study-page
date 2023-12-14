@@ -91,3 +91,11 @@ th.type11
   align:middle;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: powderblue;
+    .fit-picture{
+      width: 100%;
+      height: auto;
+    }
+  }
