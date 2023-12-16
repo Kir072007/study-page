@@ -2,6 +2,7 @@ body {
   background-color: powderblue;
 }
 
+
 h1.typeh1 {
   color: rgb(0, 217, 255);
   font-family: verdana;
@@ -93,13 +94,15 @@ th.type11
 }
 @media only screen and (max-width: 600px) {
   body {
+    h1.typeh1 {
+      font-size: 200%; 
+    }
     background-color: rgb(30, 179, 79);
   }
-    .fit-picture{
-      width: 100%;
-      height: auto;
-      align-items: center;
 
-    }
-  
+  .fit-picture {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
+
