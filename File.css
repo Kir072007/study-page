@@ -31,12 +31,12 @@ p.type2  {
   font-size: 160%;
 }
 p.type3  {
-  color: rgb(255, 0, 179);
+  color: rgb(0, 4, 255);
   font-family: courier;
   font-size: 160%;
 }
 p.type4{
-  color: rgb(255, 0, 179);
+  color: rgb(60, 88, 59);
   font-family: courier;
   font-size: 150%;
 }
@@ -98,7 +98,7 @@ th.type11
     h1.typeh1 {
       font-size: 200%; 
     }
-    background-color: rgb(30, 179, 79);
+    background-color: rgb(97, 131, 109);
   }
 
   .fit-picture {
