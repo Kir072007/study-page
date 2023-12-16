@@ -94,6 +94,7 @@ th.type11
 }
 @media only screen and (max-width: 600px) {
   body {
+    
     h1.typeh1 {
       font-size: 200%; 
     }
@@ -105,4 +106,25 @@ th.type11
     margin: 0 auto;
   }
 }
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.place {
+  float: left;
+}
 
+.place a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.place a:hover {
+  background-color: #111;
+}
