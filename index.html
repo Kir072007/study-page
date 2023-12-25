@@ -7,20 +7,22 @@
   <title>Document1</title>
 </head>
 <script>
- var userInput = " ";
-var a = 0;
+  var a = 0;
 
-if (a < 1) {
-    userInput = prompt("Введіть своє ім'я:", " ");
+  var savedName = localStorage.getItem('userName');
+  if (a < 1 && !savedName) {
+      var userInput = prompt("Введіть своє ім'я:", " ");
 
-    while (userInput === null || userInput.trim() === "" || userInput.length > 20) {
-        alert("Введіть дійсне ім'я, що не довше 20 символів.");
-        userInput = prompt("Введіть своє ім'я:", " ");
-    }
+      while (userInput === null || userInput === "" || userInput.length > 20) {
+          alert("Введіть дійсне ім'я, що не довше 20 символів.");
+          userInput = prompt("Введіть своє ім'я:", " ");
+      }
 
-    alert("Вітаю, " + userInput + ", на моєму сайті.");
-    a++;
-}
+      localStorage.setItem('userName', userInput);
+
+      alert("Вітаю, " + userInput + ", на моєму сайті.");
+      a++;
+  }
 </script>
 <title>Навигационное меню</title>
 
