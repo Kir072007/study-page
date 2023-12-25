@@ -18,7 +18,7 @@ if (a < 1) {
         userInput = prompt("Введіть своє ім'я:", " ");
     }
 
-    alert("Вітаю, " + userInput + " на моєму сайті.");
+    alert("Вітаю, " + userInput + ", на моєму сайті.");
     a++;
 }
 </script>
