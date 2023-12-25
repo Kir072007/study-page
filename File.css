@@ -1,130 +1,86 @@
-body {
-  background-color: powderblue;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="File.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document1</title>
+</head>
+<script>
+ var userInput = " ";
+var a = 0;
 
+if (a < 1) {
+    userInput = prompt("Введіть своє ім'я:", " ");
 
-h1.typeh1 {
-  color: rgb(0, 217, 255);
-  font-family: verdana;
-  font-size: 300%;
-}
-
-.fit-picture {
-  max-width: 100%;
-  height: auto;
-}
-h2.typeh2
-{
-  text-align: center;
-    color: rgb(80, 59, 59);
-    font-family: verdana;
-    font-size: 200%;
-  }
-p.type1  {
-  color: red;
-  font-family: courier;
-  font-size: 160%;
-}
-p.type2  {
-  color: rgb(0, 255, 255);
-  font-family: courier;
-  font-size: 160%;
-}
-p.type3  {
-  color: rgb(0, 4, 255);
-  font-family: courier;
-  font-size: 160%;
-}
-p.type4{
-  color: rgb(60, 88, 59);
-  font-family: courier;
-  font-size: 150%;
-}
-p.type5{
-  color: rgb(4, 0, 255);
-  font-family: courier;
-  font-size: 130%;
-}
-th.type6{
-  color:rgb(126, 122, 122);
-  font-size: 200%;
-  font-family:sans-serif;
-}
-th.type7
-{
-  color:rgb(255, 251, 0);
-  font-size: 200%;
-  font-family:Times New Roman;
-}
-th.type8
-{
-  color:rgb(4, 0, 255);
-  font-size: 200%;
-  font-family: Verdana;
-}
-th.type9
-{
-  color:rgb(247, 0, 214);
-  font-size: 160%;
-  font-family: sans-serif;
-}
-th.type10
-{
-  color:rgb(43, 44, 46);
-  font-size: 160%;
-  font-family: Helvetica;
-}
-th.type11
-{
-  color:rgb(201, 26, 35);
-  font-size: 160%;
-  font-family: Arial;
-}
-.border4{
-  border: 5px solid #000; 
-  padding: 1px; 
-  font-size: 200%;
-  font-family: verdana;
-}
-.fit-picture{
-  width: 50%;
-  height: auto;
-  align-items: center;
-
-}
-@media only screen and (max-width: 600px) {
-  body {
-    
-    h1.typeh1 {
-      font-size: 200%; 
+    while (userInput === null || userInput.trim() === "" || userInput.length > 20) {
+        alert("Введіть дійсне ім'я, що не довше 20 символів.");
+        userInput = prompt("Введіть своє ім'я:", " ");
     }
-    background-color: rgb(97, 131, 109);
-  }
 
-  .fit-picture {
-    width: 100%;
-    margin: 0 auto;
-  }
+    alert("Вітаю, " + userInput + " на моєму сайті.");
+    a++;
 }
-.navigation {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-.place {
-  float: left;
-}
+</script>
+<title>Навигационное меню</title>
 
-.place a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+<body>
 
-.place a:hover {
-  background-color: #111;
-}
+<ul class="navigation">
+  <li class="place"><a href="index.html">Інженер-проектувальник</a></li>
+  <li class="place"><a href="Page-2.html">Сфери для нього</a></li>
+</ul>
+</body>
+  <marquee behavior="scroll" direction="left"><h1 class="typeh1">Інженер-проектувальник-хто він?</h1></marquee>
+
+  <h2 class="typeh2">Що робить інженер-проектувальник?</h2>
+
+  <img class="fit-picture" src="https://i.ibb.co/Jzqcc4H/90.jpg" width="48%" height="48%" alt="Ingenieur hand photo" align="left" vspace="5" hspace="25">
+
+  <p class="p4">
+    <p class="type4"><b>Інженер-проектувальник</b> - спеціаліст, який займається розробкою планів різних конструкцій. 
+      Проектувальники складають схеми розташування систем електрики, водопостачання, каналізації, 
+      проектують будинки та споруди, промислові об'єкти. Фахівці користуються попитом у різних сферах діяльності.</p>
+
+    <p hspace="25" class="type5"><b>Основні обов'язки інженера-проектувальника можуть включати:</b></p>
+    <ul>
+      <li><em>Проектування</em>: Інженер-проектувальник відповідає за розробку та створення технічних проектів, які можуть охоплювати будівельні, механічні, електричні або інші інженерні системи.
+        <li><em>Аналіз технічних вимог</em>: Вони вивчають та аналізують технічні вимоги проекту, співпрацюючи з клієнтами, замовниками або іншими інженерами, щоб з'ясувати потреби та очікування.
+          <li><em>Визначення матеріалів та ресурсі</em>: Інженер-проектувальник визначає необхідні матеріали, обладнання та ресурси для реалізації проекту та розробляє плани їхнього використання.
+            <li> <em>Створення технічної документації</em>: Інженер-проектувальник генерує технічну документацію, яка включає схеми, креслення, специфікації та інші документи, що допомагають у втіленні проекту.
+            <li><em> Тестування та відладка</em>: Після реалізації проекту інженер-проектувальник може виконувати тестування та відладку системи, щоб переконатися в її ефективності та відповідності технічним вимогам.
+            <li> <em>Співпраця з іншими фахівцями</em>: Інженер-проектувальник співпрацює з іншими інженерами, архітекторами, менеджерами проектів та іншими фахівцями для успішної реалізації проектів.
+            <li><em>Дотримання стандартів та нормативів</em>: Інженер-проектувальник повинен працювати відповідно до встановлених стандартів та нормативів, які регулюють його сферу діяльності.
+    </ul>
+  </p>
+
+  <table style="margin-top: 55px;" border="3" width="90%" height="90%" align="center" vspace="100">
+    <caption><h2 class="typeh2">Час, виділений для підготовки для вступу на тиждень</h2></caption>
+    <tr>
+      <th class="type6">Номер</th>
+      <th class="type7">Назва предмету на НМТ</th>
+      <th class="type8">Кількість годин</th>
+     </tr>
+     <tr>
+       <th class="type9">1</th>
+       <th class="type10">Математика</th>
+       <th class="type11">2</th>
+      </tr>
+      <tr>
+       <th class="type9">2</th>
+       <th class="type10">Україньська мова</th>
+       <th class="type11">1.5</th>
+      </tr>
+      <tr>
+       <th class="type9">3</th>
+       <th class="type10">Фізика</th>
+       <th class="type11">2</th>
+      </tr> 
+  </table>
+
+  <h2 align="middle" style="color:rgb(126, 122, 122)">Додаткова інформація за цією картинкою:</h2>
+  <a href="https://www.education.ua/professions/design-engineer/">
+    <img align="center" class="fit-picture"  src="https://i.ibb.co/FnnsD6j/433434.jpg" width="30%" height="30%" alt="Ingenieur 2 photo">
+  </a>
+</body>
+</html>
